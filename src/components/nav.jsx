@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const styles = {
     nav: {
         display: 'flex',
@@ -7,40 +9,34 @@ const styles = {
 
 const Nav = ({ activePage, setActivePage }) => {
 
-    const getActiveBg = (label) => {
-        return activePage === label ? 'royalblue' : 'initial'
-    }
+    const getActiveClass = ({ isActive }) => isActive ? 'active' : ''
 
     return (
         <nav style={styles.nav}>
-            <button 
-                onClick={() => setActivePage('about')}
-                style={{
-                    backgroundColor: getActiveBg('about')
-            }}>
+            <NavLink 
+                to='/' 
+                className={`button ${getActiveClass}`}
+            >
                 About Me
-            </button>
-            <button 
-                onClick={() => setActivePage('portfolio')}
-                style={{
-                    backgroundColor: getActiveBg('portfolio')
-            }}>
+            </NavLink>
+            <NavLink 
+                to='/portfolio' 
+                className={`button ${getActiveClass}`}
+            >
                 Portfolio
-            </button>
-            <button 
-                onClick={() => setActivePage('contact')}
-                style={{
-                    backgroundColor: getActiveBg('contact')
-            }}>
+            </NavLink>
+            <NavLink 
+                to='/contact' 
+                className={`button ${getActiveClass}`}
+            >
                 Contact
-            </button>
-            <button 
-                onClick={() => setActivePage('resume')}
-                style={{
-                    backgroundColor: getActiveBg('resume')
-            }}>
+            </NavLink>
+            <NavLink 
+                to='/resume' 
+                className={`button ${getActiveClass}`}
+            >
                 Resume
-            </button>
+            </NavLink>
         </nav>
     )
 }

@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
 import AboutPage from './pages/about.jsx'
 import ContactPage from './pages/contact.jsx'
 import PortfolioPage from './pages/portfolio.jsx'
 import ResumePage from './pages/resume.jsx'
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
@@ -19,15 +19,15 @@ const router = createBrowserRouter([
         element: <AboutPage />
       },
       {
-        path: '',
+        path: 'contact',
         element: <ContactPage />
       },
       {
-        path: '',
+        path: 'portfolio',
         element: <PortfolioPage />
       },
       {
-        path: '',
+        path: 'resume',
         element: <ResumePage />
       }
     ]
@@ -36,6 +36,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
