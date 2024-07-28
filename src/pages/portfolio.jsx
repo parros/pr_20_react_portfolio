@@ -1,7 +1,8 @@
 const PortfolioPage = () => {
     return (
         <>
-        <h1>Portfoilo</h1>
+        <h1>Portfolio</h1>
+        <p> Portfolio ...</p>
         </>
     )
 }
