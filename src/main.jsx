@@ -2,6 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import AboutPage from './pages/about.jsx'
+import ContactPage from './pages/contact.jsx'
+import PortfolioPage from './pages/portfolio.jsx'
+import ResumePage from './pages/resume.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -9,12 +13,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
-      {
-        path: '',
-        element: <HomePage />
-      },
       {
         path: '',
         element: <AboutPage />
