@@ -65,18 +65,40 @@ nav {
   width: 100%;
 }
 
+label {
+  margin-left: 2%;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+input {
+  margin-left: 2%;
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+#root {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+}
+
 .button {
+  flex: content;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 1%;
   font-size: 22px;
   font-weight: 500;
   font-family: inherit;
-  float: right;
-  background-color: #4a7c59;
+  background-color: #1f5673;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin-left: auto;
+  justify-content: space-evenly;
+  margin: 0 3%;
+  text-align: center;
 }
 
 .button:hover {
@@ -90,5 +112,20 @@ nav {
 
 .active {
   color: #fffded;
-  background-color: #1f5673;
+  background-color: #4a7c59;
+}
+
+#message {
+  height: 100px;
+  vertical-align: top;
+  text-wrap: wrap;
+}
+
+#header {
+  margin: 5% 2%;
+}
+
+#idForm {
+  width: 125px;
+  height: 35px;
 }

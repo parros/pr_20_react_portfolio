@@ -4,7 +4,7 @@ import Nav from './components/nav'
 function App() {
   return (
     <>
-    <h1>Parros</h1>
+    <h1 id='header'>Parros</h1>
       <Nav />
       <Outlet />
 
