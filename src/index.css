@@ -85,6 +85,12 @@ nav {
   display: flex;
 }
 
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+
 .button {
   flex: content;
   border-radius: 4px;
@@ -128,4 +134,8 @@ nav {
 #idForm {
   width: 125px;
   height: 35px;
+}
+
+.aboutMeLink {
+  height: 50px;
 }
