@@ -9,7 +9,7 @@ N/A
 
 ## Usage
 
-https://main--parrosportfolio.netlify.app/Links to an external site.
+https://main--parrosportfolio.netlify.app/
 
 ## Credits
 
